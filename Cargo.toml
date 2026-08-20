@@ -3,6 +3,10 @@ name = "wordfreq"
 version = "0.3.0"
 edition = "2024"
 
+[[bin]]
+name = "wordfreq"
+path = "src/wordfreq.rs"
+
 [dependencies]
 clap = { version = "4.6.6", features = ["derive"] } # Check always for the latest version on crates.io
 unicode-normalization = "0.1.25"
