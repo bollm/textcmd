@@ -45,7 +45,7 @@ SUBCOMMANDS:
     name = "wordfreq",
     version = PRG_VERSION,
     about = "A program for determining word frequencies in an input text. It also normalizes the detected words.",
-    long_about = "This program determines all the words in an passed input text and normalizes the detected words.\n 
+    long_about = "This program determines all the words in a passed input text and normalizes the detected words.\n 
 (Currently, only the words are returned, not the individual frequencies)." // Output when the --help option has been entered.
 )]
 
