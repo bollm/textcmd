@@ -4,7 +4,7 @@ A simple command-line utilitiy for processing text, i. e. for counting and norma
 
 ## Features
 
-- **Current Features**: Counts all words (currently, only all the words of a text file are returned, not the individual frequencies), normalizing words containing, for example, umlauts and special characters.
+- **Current Features**: Counts all words (currently, only all the words of a text file are returned, not the individual frequencies), normalizing words containing, for example, umlauts and special characters. Checks whether the input text file is UTF-8 encoded; if not, it assumes Windows-1252 encoding.
 - **Future features**: Flag for displaying each word count in the output, flag for not-normalizing words with special characters.
 
 ## Installation
@@ -34,7 +34,7 @@ cargo run -- <filename>
 ### Examples
 
 ```bash
-# Determines all words a text file
+# Determines all words in an input text file and writes the results to the standard output file "mydic_curr.txt".
 cargo run -- -f document.txt
 
 # Using the compiled binary
