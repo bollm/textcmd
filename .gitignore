@@ -19,5 +19,4 @@ target/release/wra6.txt
 target/release/wra7.txt
 target/release/wra16.txt
 target/release/wordfreq.d
-document.txt
-mydic_curr.txt
+target/document.txt
