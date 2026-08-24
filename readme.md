@@ -93,7 +93,11 @@ For more information, try '--help'.
 ## Technical Details
 
 - **Language**: Rust (Edition 2024)
-- **Dependencies**: None (uses only standard library)
+- **Dependencies**:
+  - clap - "4.6.6"
+  - unicode-normalization - "0.1.25"
+  - encoding_rs - "0.8.35"
+  - encoding_rs_io = "0.1.8"
 - **Minimum Rust Version**: 1.70.0
 - **Platform**: Cross-platform (Linux, macOS, Windows)
 
