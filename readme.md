@@ -48,7 +48,7 @@ cargo run -- -f document.txt
 ## Project Structure
 
 ```
-rust-word-counter/
+textcmd/
 ├── Cargo.toml           # Project manifest
 ├── Cargo.lock           # Dependency lock file
 ├── readme.md            # This file
@@ -58,7 +58,31 @@ rust-word-counter/
 
 ## Error Handling
 
-[Coming soon.]
+The program is currently returning the following error messages:
+
+# No filename provided
+
+$ cargo run
+error: the following required arguments were not provided:
+  --file <FILE>
+
+Usage: wordfreq.exe --file <FILE>
+
+For more information, try '--help'.
+
+# File doesn't exist
+
+$ cargo run -- -f notexistingfile.txt
+error: invalid value 'notexistingfile.txt' for '--file <FILE>': file does not exist: notexistingfile.txt
+
+For more information, try '--help'.
+
+# Permission denied
+
+$ cargo run -- /etc/notenoughrights.txt
+error: invalid value 'C:/msys64/etc/notenoughrights.txt' for '--file <FILE>': cannot open file: Zugriff verweigert (os error 5)
+
+For more information, try '--help'.
 
 ## Technical Details
 
