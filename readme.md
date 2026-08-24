@@ -60,7 +60,7 @@ textcmd/
 
 The program is currently returning the following error messages:
 
-# No filename provided
+### No filename provided
 
 $ cargo run
 error: the following required arguments were not provided:
@@ -70,14 +70,14 @@ Usage: wordfreq.exe --file <FILE>
 
 For more information, try '--help'.
 
-# File doesn't exist
+### File doesn't exist
 
 $ cargo run -- -f notexistingfile.txt
 error: invalid value 'notexistingfile.txt' for '--file <FILE>': file does not exist: notexistingfile.txt
 
 For more information, try '--help'.
 
-# Permission denied
+### Permission denied
 
 $ cargo run -- /etc/notenoughrights.txt
 error: invalid value 'C:/msys64/etc/notenoughrights.txt' for '--file <FILE>': cannot open file: Zugriff verweigert (os error 5)
